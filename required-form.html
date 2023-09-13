@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Intro to Pseudoclasses</title>
+        <style>
+            html {
+                background-color:white;
+            }
+
+            * {
+                color:black;
+            }
+
+            h1 {
+                font-size:12vh;
+                margin-bottom:0;
+                border-left:1vh salmon solid;
+                padding-left:1vh;
+            }
+
+            body {
+                display:flex;
+                padding:1vh;
+            }
+
+            main {
+                margin:auto;
+            }
+
+            tr, th, td {
+                border:0.3vh black solid;
+                padding:1vh;
+            }
+
+            table {
+                border-collapse:collapse;
+                margin:auto;
+            }
+
+            h3 {
+                text-align:center;
+                font-size:3vh;
+            }
+
+            legend {
+                font-size:2vh;
+                font-weight:bold;
+            }
+
+            label {
+                display:block;
+                margin:2vh;
+            }
+
+            input {
+                margin-left:1vh;
+            }
+
+            span label {
+                display:inline-block;
+            }
+
+            h5 {
+                margin-bottom:0;
+            }
+
+            input:required {
+                box-shadow:green 0.1vh 0.1vh 1vh;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <article>
+                <h1>Form Pseudoclasses</h1>
+                <i>Pseudoclasses provide <q>temporary</q> classes to elements so they can get <q>temporary</q> styles.</i>
+                <hr width="50%" align="left">
+                <section>
+                    <p>Any form input required to be filled out has a different style.</p>
+                    <form>
+                        <h3>Registration Form</h3>
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            <label>
+                                Your Name
+                                <input type="text" required/>
+                            </label>
+                            <label>
+                                Your Age (You should be at least 18 years old.)
+                                <input type="number" min="18" max="80" required/>
+                            </label>
+                            <label>
+                                Your Address
+                                <input type="text" required/>
+                            </label>
+                            <span>
+                                <h5>Your Gender</h5>
+                                <label>
+                                    Male
+                                    <input type="checkbox"/>
+                                </label>
+                                <label>
+                                    Female
+                                    <input type="checkbox"/>
+                                </label>
+                                <label>
+                                    Non-Binary
+                                    <input type="checkbox"/>
+                                </label>
+                                <label>
+                                    Prefer Not to Say
+                                    <input type="checkbox"/>
+                                </label>
+                            </span>
+                        </fieldset>
+                    </form>
+                </section>
+            </article>
+        </main>
+    </body>
+</html>
